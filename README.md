@@ -4,8 +4,6 @@
 
 > **Elemento diferencial del grupo (5):** *Selector en cadena de vasos de moneda por visión computacional → control por ESP32 → aparcamiento por voz.*
 
-![Vista general de la simulación](evidencias/sim_general.png)
-
 ---
 
 ## Contenido
