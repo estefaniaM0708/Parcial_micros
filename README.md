@@ -2167,13 +2167,13 @@ La simulación se encuentra organizada de la siguiente manera:
 ```text
 5_simulacion/
 │
-├── simulacion_sistema.py
+├── sistema_monedas_osbtaculos_distribuidos.py
 │   └── Código principal de la simulación
 │
-├── requirements.txt
+├── selector_monedas.py; contador_carro.py
 │   └── Dependencias necesarias para ejecutar la simulación
 │
-└── evidencias_sim.png
+└── SIMULACIÓN.mp4
     └── Evidencia generada por la simulación
 ```
 
