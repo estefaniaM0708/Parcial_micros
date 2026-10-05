@@ -1,0 +1,12 @@
+# Todo el proyecto (PC)
+pybullet
+numpy
+opencv-python
+streamlit>=1.37
+streamlit-mic-recorder
+pandas
+plotly
+requests
+matplotlib
+mpremote
+esptool

@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!-- carro.urdf - Carro recolector de vasos (Grupo 5). Generado por generar_cad.py, escala 4.0:1 -->
+<robot name="carro_recolector">
+  <link name="chasis">
+    <visual name="chasis"><origin xyz="0.00000 0.00000 0.00000" rpy="0 0 0.00000"/><geometry><box size="0.88000 0.56000 0.01600"/></geometry><material name="m_chasis"><color rgba="0.95 0.55 0.10 1"/></material></visual>
+    <visual name="piso2"><origin xyz="0.00000 0.00000 0.17400" rpy="0 0 0.00000"/><geometry><box size="0.88000 0.56000 0.01200"/></geometry><material name="m_piso2"><color rgba="0.85 0.85 0.90 1"/></material></visual>
+    <visual name="separador"><origin xyz="-0.38000 -0.24000 0.08800" rpy="0 0 0"/><geometry><cylinder radius="0.01200" length="0.16000"/></geometry><material name="m_separador"><color rgba="0.80 0.70 0.30 1"/></material></visual>
+    <visual name="separador"><origin xyz="-0.38000 0.24000 0.08800" rpy="0 0 0"/><geometry><cylinder radius="0.01200" length="0.16000"/></geometry><material name="m_separador"><color rgba="0.80 0.70 0.30 1"/></material></visual>
+    <visual name="separador"><origin xyz="0.38000 -0.24000 0.08800" rpy="0 0 0"/><geometry><cylinder radius="0.01200" length="0.16000"/></geometry><material name="m_separador"><color rgba="0.80 0.70 0.30 1"/></material></visual>
+    <visual name="separador"><origin xyz="0.38000 0.24000 0.08800" rpy="0 0 0"/><geometry><cylinder radius="0.01200" length="0.16000"/></geometry><material name="m_separador"><color rgba="0.80 0.70 0.30 1"/></material></visual>
+    <visual name="motor"><origin xyz="-0.12000 -0.15000 -0.04560" rpy="0 0 0.00000"/><geometry><box size="0.09000 0.26000 0.07520"/></geometry><material name="m_motor"><color rgba="0.95 0.80 0.10 1"/></material></visual>
+    <visual name="motor"><origin xyz="-0.12000 0.15000 -0.04560" rpy="0 0 0.00000"/><geometry><box size="0.09000 0.26000 0.07520"/></geometry><material name="m_motor"><color rgba="0.95 0.80 0.10 1"/></material></visual>
+    <visual name="soporte_loca"><origin xyz="0.34000 0.00000 -0.03200" rpy="0 0 0.00000"/><geometry><box size="0.12000 0.12000 0.10800"/></geometry><material name="m_soporte_loca"><color rgba="0.60 0.60 0.60 1"/></material></visual>
+    <visual name="esp32_s3"><origin xyz="0.14000 0.12800 0.02800" rpy="0 0 0.00000"/><geometry><box size="0.27600 0.10400 0.04000"/></geometry><material name="m_esp32_s3"><color rgba="0.10 0.10 0.12 1"/></material></visual>
+    <visual name="tb6612"><origin xyz="0.14000 -0.11200 0.02400" rpy="0 0 0.00000"/><geometry><box size="0.08400 0.08000 0.03200"/></geometry><material name="m_tb6612"><color rgba="0.75 0.10 0.10 1"/></material></visual>
+    <visual name="bateria"><origin xyz="-0.12000 0.00000 0.05000" rpy="0 0 0.00000"/><geometry><box size="0.30800 0.16400 0.08400"/></geometry><material name="m_bateria"><color rgba="0.15 0.15 0.55 1"/></material></visual>
+    <visual name="buck_5v"><origin xyz="0.28800 -0.15200 0.03600" rpy="0 0 0.00000"/><geometry><box size="0.17200 0.08400 0.05600"/></geometry><material name="m_buck_5v"><color rgba="0.10 0.35 0.65 1"/></material></visual>
+    <visual name="hcsr04"><origin xyz="0.44800 0.00000 0.07200" rpy="0 0 0.00000"/><geometry><box size="0.00640 0.18000 0.08000"/></geometry><material name="m_hcsr04"><color rgba="0.10 0.45 0.80 1"/></material></visual>
+    <visual name="transductor"><origin xyz="0.47520 -0.05200 0.07200" rpy="0 1.5708 0"/><geometry><cylinder radius="0.03200" length="0.04800"/></geometry><material name="m_transductor"><color rgba="0.80 0.80 0.82 1"/></material></visual>
+    <visual name="transductor"><origin xyz="0.47520 0.05200 0.07200" rpy="0 1.5708 0"/><geometry><cylinder radius="0.03200" length="0.04800"/></geometry><material name="m_transductor"><color rgba="0.80 0.80 0.82 1"/></material></visual>
+    <visual name="hcsr04"><origin xyz="-0.44800 0.00000 0.07200" rpy="0 0 0.00000"/><geometry><box size="0.00640 0.18000 0.08000"/></geometry><material name="m_hcsr04"><color rgba="0.10 0.45 0.80 1"/></material></visual>
+    <visual name="transductor"><origin xyz="-0.47520 -0.05200 0.07200" rpy="0 1.5708 0"/><geometry><cylinder radius="0.03200" length="0.04800"/></geometry><material name="m_transductor"><color rgba="0.80 0.80 0.82 1"/></material></visual>
+    <visual name="transductor"><origin xyz="-0.47520 0.05200 0.07200" rpy="0 1.5708 0"/><geometry><cylinder radius="0.03200" length="0.04800"/></geometry><material name="m_transductor"><color rgba="0.80 0.80 0.82 1"/></material></visual>
+    <visual name="ir_linea"><origin xyz="0.39200 -0.08000 -0.03200" rpy="0 0 0.00000"/><geometry><box size="0.04000 0.04000 0.04800"/></geometry><material name="m_ir_linea"><color rgba="0.05 0.05 0.05 1"/></material></visual>
+    <visual name="ir_linea"><origin xyz="0.39200 0.00000 -0.03200" rpy="0 0 0.00000"/><geometry><box size="0.04000 0.04000 0.04800"/></geometry><material name="m_ir_linea"><color rgba="0.05 0.05 0.05 1"/></material></visual>
+    <visual name="ir_linea"><origin xyz="0.39200 0.08000 -0.03200" rpy="0 0 0.00000"/><geometry><box size="0.04000 0.04000 0.04800"/></geometry><material name="m_ir_linea"><color rgba="0.05 0.05 0.05 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.05600 0.00000 0.24000" rpy="0 0 0.00000"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.06159 0.04245 0.24000" rpy="0 0 0.26180"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.07797 0.08200 0.24000" rpy="0 0 0.52360"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.10403 0.11597 0.24000" rpy="0 0 0.78540"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.13800 0.14203 0.24000" rpy="0 0 1.04720"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.17755 0.15841 0.24000" rpy="0 0 1.30900"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.22000 0.16400 0.24000" rpy="0 0 1.57080"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.26245 0.15841 0.24000" rpy="0 0 1.83260"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.30200 0.14203 0.24000" rpy="0 0 2.09440"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.33597 0.11597 0.24000" rpy="0 0 2.35619"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.36203 0.08200 0.24000" rpy="0 0 2.61799"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.37841 0.04245 0.24000" rpy="0 0 2.87979"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.38400 0.00000 0.24000" rpy="0 0 3.14159"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.37841 -0.04245 0.24000" rpy="0 0 3.40339"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.36203 -0.08200 0.24000" rpy="0 0 3.66519"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.33597 -0.11597 0.24000" rpy="0 0 3.92699"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.30200 -0.14203 0.24000" rpy="0 0 4.18879"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.26245 -0.15841 0.24000" rpy="0 0 4.45059"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.22000 -0.16400 0.24000" rpy="0 0 4.71239"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.17755 -0.15841 0.24000" rpy="0 0 4.97419"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.13800 -0.14203 0.24000" rpy="0 0 5.23599"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.10403 -0.11597 0.24000" rpy="0 0 5.49779"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.07797 -0.08200 0.24000" rpy="0 0 5.75959"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <visual name="portavaso"><origin xyz="-0.06159 -0.04245 0.24000" rpy="0 0 6.02139"/><geometry><box size="0.01600 0.04508 0.12000"/></geometry><material name="m_portavaso"><color rgba="0.20 0.55 0.90 1"/></material></visual>
+    <collision><origin xyz="0 0 0"/><geometry><box size="0.88000 0.56000 0.01600"/></geometry></collision>
+    <collision><origin xyz="0 0 0.17400"/><geometry><box size="0.88000 0.56000 0.01200"/></geometry></collision>
+    <collision><origin xyz="-0.12000 0.00000 0.04800"/><geometry><box size="0.36000 0.20000 0.08000"/></geometry></collision>
+    <inertial><origin xyz="-0.06000 0 0"/><mass value="3.600"/>
+      <inertia ixx="0.104683" iyy="0.242923" izz="0.326400" ixy="0" ixz="0" iyz="0"/></inertial>
+  </link>
+
+  <link name="rueda_izq">
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.13000" length="0.10400"/></geometry>
+      <material name="m_rueda"><color rgba="0.08 0.08 0.08 1"/></material></visual>
+    <visual><origin xyz="0 0.05200 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.07150" length="0.00800"/></geometry>
+      <material name="m_rin"><color rgba="0.95 0.8 0.1 1"/></material></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.13000" length="0.10400"/></geometry></collision>
+    <inertial><mass value="0.200"/><inertia ixx="0.001025" iyy="0.001690" izz="0.001025" ixy="0" ixz="0" iyz="0"/></inertial>
+  </link>
+  <joint name="motor_izq" type="continuous">
+    <parent link="chasis"/><child link="rueda_izq"/>
+    <origin xyz="-0.12000 0.34400 -0.04600"/><axis xyz="0 1 0"/>
+  </joint>
+
+  <link name="rueda_der">
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.13000" length="0.10400"/></geometry>
+      <material name="m_rueda"><color rgba="0.08 0.08 0.08 1"/></material></visual>
+    <visual><origin xyz="0 -0.05200 0" rpy="1.5708 0 0"/><geometry><cylinder radius="0.07150" length="0.00800"/></geometry>
+      <material name="m_rin"><color rgba="0.95 0.8 0.1 1"/></material></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.13000" length="0.10400"/></geometry></collision>
+    <inertial><mass value="0.200"/><inertia ixx="0.001025" iyy="0.001690" izz="0.001025" ixy="0" ixz="0" iyz="0"/></inertial>
+  </link>
+  <joint name="motor_der" type="continuous">
+    <parent link="chasis"/><child link="rueda_der"/>
+    <origin xyz="-0.12000 -0.34400 -0.04600"/><axis xyz="0 1 0"/>
+  </joint>
+  <link name="rueda_loca">
+    <visual><geometry><sphere radius="0.04000"/></geometry>
+      <material name="m_loca"><color rgba="0.6 0.6 0.6 1"/></material></visual>
+    <collision><geometry><sphere radius="0.04000"/></geometry></collision>
+    <inertial><mass value="0.040"/><inertia ixx="0.000205" iyy="0.000205" izz="0.000205" ixy="0" ixz="0" iyz="0"/></inertial>
+  </link>
+  <joint name="loca" type="fixed">
+    <parent link="chasis"/><child link="rueda_loca"/>
+    <origin xyz="0.34000 0.00000 -0.13600"/>
+  </joint>
+  <link name="porta_vaso"><inertial><mass value="0.001"/><inertia ixx="1e-6" iyy="1e-6" izz="1e-6" ixy="0" ixz="0" iyz="0"/></inertial></link>
+  <joint name="porta_vaso" type="fixed">
+    <parent link="chasis"/><child link="porta_vaso"/>
+    <origin xyz="-0.22000 0.00000 0.18000"/>
+  </joint>
+  <link name="sensor_frontal"><inertial><mass value="0.001"/><inertia ixx="1e-6" iyy="1e-6" izz="1e-6" ixy="0" ixz="0" iyz="0"/></inertial></link>
+  <joint name="sensor_frontal" type="fixed">
+    <parent link="chasis"/><child link="sensor_frontal"/>
+    <origin xyz="0.49600 0.00000 0.07200"/>
+  </joint>
+  <link name="sensor_trasero"><inertial><mass value="0.001"/><inertia ixx="1e-6" iyy="1e-6" izz="1e-6" ixy="0" ixz="0" iyz="0"/></inertial></link>
+  <joint name="sensor_trasero" type="fixed">
+    <parent link="chasis"/><child link="sensor_trasero"/>
+    <origin xyz="-0.49600 0.00000 0.07200" rpy="0 0 3.14159"/>
+  </joint>
+</robot>
